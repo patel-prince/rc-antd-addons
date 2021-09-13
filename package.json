@@ -1,10 +1,10 @@
 {
-	"name": "antd-addons",
+	"name": "rc-antd-addons",
 	"version": "1.0.0",
 	"description": "Made with create-react-library",
 	"author": "patel-prince",
 	"license": "MIT",
-	"repository": "patel-prince/antd-addons",
+	"repository": "patel-prince/rc-antd-addons",
 	"main": "dist/index.js",
 	"module": "dist/index.modern.js",
 	"source": "src/index.tsx",
