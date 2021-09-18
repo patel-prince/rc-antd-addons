@@ -64,6 +64,12 @@ const App = () => {
 				}}
 			/>
 
+			<InputBox.Number
+				name="number_field"
+				label="Number Field"
+				placeholder="Number"
+			/>
+
 			<Button htmlType="submit" type="primary" size="large">
 				Submit
 			</Button>

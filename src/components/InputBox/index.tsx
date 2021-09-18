@@ -7,6 +7,7 @@ import { InputBoxProps } from "./interface";
 import DatePickerInputBox from "./DatePickerInputBox";
 import DateRangePickerInputBox from "./DateRangePickerInputBox";
 import RadioInputBox from "./RadioInputBox";
+import NumberInputBox from "./NumberInputBox";
 
 const InternalInputBox: React.FC<InputBoxProps> = (props) => {
 	return <TextInputBox {...props} />;
@@ -20,6 +21,7 @@ interface CompoundedComponent
 	DatePicker: typeof DatePickerInputBox;
 	DateRangePicker: typeof DateRangePickerInputBox;
 	Radio: typeof RadioInputBox;
+	Number: typeof NumberInputBox;
 }
 
 const InputBox = InternalInputBox as CompoundedComponent;
@@ -29,5 +31,6 @@ InputBox.Select = SelectInputBox;
 InputBox.DatePicker = DatePickerInputBox;
 InputBox.DateRangePicker = DateRangePickerInputBox;
 InputBox.Radio = RadioInputBox;
+InputBox.Number = NumberInputBox;
 
 export default InputBox;
