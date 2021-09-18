@@ -1,6 +1,7 @@
 import {
 	DatePickerProps,
 	FormItemProps,
+	InputNumberProps,
 	InputProps,
 	RadioGroupProps,
 } from "antd";
@@ -44,3 +45,7 @@ export interface RadioInputBoxProps
 	options: InputOptionListProps;
 	type?: "radio" | "button";
 }
+
+export interface NumberInputBoxProps
+	extends FormItemProps,
+		Omit<InputNumberProps, "name" | "children" | "onReset"> {}
